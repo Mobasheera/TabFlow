@@ -27,14 +27,17 @@
         align-items: center;
         background-color: #f4f4f4;
     }
+
     .container {
         width: 90%;
-        max-width: 600px;
+        max-width: 800px;
         padding: 20px;
         background-color: white;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
     }
+
     textarea {
         width: 100%;
         height: 200px;
@@ -45,6 +48,7 @@
         border: 1px solid #ccc;
         resize: vertical;
     }
+
     input[type="button"] {
         width: 48%;
         padding: 10px;
@@ -55,18 +59,23 @@
         cursor: pointer;
         background-color: #007BFF;
         color: white;
+        box-sizing: border-box;
     }
+
     input[type="button"]:hover {
         background-color: #0056b3;
     }
-    @media (max-width: 480px) {
+
+    @media (max-width: 600px) {
         .container {
             width: 95%;
             padding: 15px;
         }
+
         textarea {
             height: 150px;
         }
+
         input[type="button"] {
             width: 100%;
             margin: 10px 0;
