@@ -25,6 +25,29 @@ textarea
     height : 80%;
     width  : 90%;
 }
+
+@media (prefers-color-scheme: dark) {
+    html, body {
+        background-color: #121212;
+        color: #ffffff;
+    }
+
+    textarea {
+        background-color: #1e1e1e;
+        color: #ffffff;
+        border: 1px solid #444444;
+    }
+
+    input[type="button"] {
+        background-color: #333333;
+        color: #ffffff;
+        border: 1px solid #444444;
+    }
+
+    input[type="button"]:hover {
+        background-color: #444444;
+    }
+}
 </style>
 </head>
 <body>
